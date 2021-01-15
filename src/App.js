@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header';
-import Selection from './Components/Selection';
-import Summary from './Components/Summary';
+import Selection from './Components/MainForm';
+import Summary from './Components/MainSummary';
 import FEATURES from './FEATURES';
 
 
