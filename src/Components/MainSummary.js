@@ -10,9 +10,9 @@ export default class MainSummary extends React.Component {
             const selectedOption = this.props.selected[feature];
         return (
         <Option
-                    feature={feature}
-                    featureHash={featureHash}
-                    selectedOption={selectedOption}
+            feature={feature}
+            featureHash={featureHash}
+            selectedOption={selectedOption}
         />
         );
         });

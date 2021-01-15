@@ -1,6 +1,7 @@
 import React from 'react';
-import slugify from 'slugify';
 import Currency from './Currency';
+import slugify from 'slugify';
+
 
 export default class Specs extends React.Component {
     render() {

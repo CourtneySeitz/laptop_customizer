@@ -2,8 +2,6 @@
 import React from 'react';
 import Currency from './Currency';
 
-
-
 export default class Option extends React.Component {
     render() {
         return (  
