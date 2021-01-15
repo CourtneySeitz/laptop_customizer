@@ -1,11 +1,24 @@
 import React from 'react';
 import Total from './Total';
+import Option from './Option';
 
 
 export default class MainSummary extends React.Component {
     render() {
+        const summary = Object.keys(this.props.selected).map((feature, idx) => {
+            const featureHash = feature + '-' + idx;
+            const selectedOption = this.props.selected[feature];
+        return (
+        <Option
+                    feature={feature}
+                    featureHash={featureHash}
+                    selectedOption={selectedOption}
+        />
+        );
+        });
         
         return (
+            
             <section className="main__summary">
                 <h2>Your cart</h2>
                 {summary}
@@ -16,6 +29,7 @@ export default class MainSummary extends React.Component {
                 </div>
                 </div>
             </section>
-        )
+        );
     }
 }
+

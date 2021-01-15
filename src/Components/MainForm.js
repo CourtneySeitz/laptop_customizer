@@ -2,6 +2,7 @@
 import React from 'react';
 import slugify from 'slugify';
 import Specs from './Specs';
+import Parts from './Parts';
 
 export default class MainForm extends React.Component {
     render() {
